@@ -7,8 +7,18 @@ import Car from "./Car";
 
 const CanvasContainer = () => {
   return (
-    <Canvas>
-        <OrbitControls enableZoom={false}/>
+    <Canvas shadows 
+        camera={{
+            position: [
+                2.942922067308307, 1, 2.5,
+            ],
+        }}
+    >
+        <OrbitControls 
+            enablePan={false}
+            enableRotate={false}
+            enableZoom={false}
+        />
         <Environment preset="city" />
         <Suspense>
             <Car/>

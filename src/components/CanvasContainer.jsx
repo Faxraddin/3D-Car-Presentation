@@ -8,7 +8,7 @@ import Car from "./Car";
 const CanvasContainer = () => {
   return (
     <Canvas>
-        <OrbitControls/>
+        <OrbitControls enableZoom={false}/>
         <Environment preset="city" />
         <Suspense>
             <Car/>

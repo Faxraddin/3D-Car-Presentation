@@ -14,6 +14,7 @@ const CanvasContainer = () => {
             ],
         }}
     >
+        
         <OrbitControls 
             enablePan={false}
             enableRotate={false}

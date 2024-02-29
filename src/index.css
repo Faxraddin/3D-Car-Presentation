@@ -24,3 +24,17 @@ body{
     writing-mode: vertical-rl;
 text-orientation: upright;
 }
+
+.Appp{
+    overflow-y: scroll; /* Enable vertical scrolling */
+   height: 1520px;
+   scroll-snap-type: y mandatory;
+}
+
+.first-section{
+    scroll-snap-align: center;
+}
+
+.second-section{
+    scroll-snap-align: center;
+}

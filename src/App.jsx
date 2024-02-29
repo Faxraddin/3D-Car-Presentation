@@ -10,8 +10,11 @@ function App() {
       <div className="h-screen w-full fixed top-10 z-10 hidden lg:block">
         <CanvasContainer/>
       </div>
-      <HeaderSection/>
-      <SecondSection/>
+      <div className="Appp">
+        <HeaderSection/>
+        <SecondSection/>
+      </div>
+
     </main>
   )
 }

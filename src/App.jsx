@@ -2,6 +2,7 @@ import React from "react"
 
 import CanvasContainer from "./components/CanvasContainer";
 import HeaderSection from "./pages/HeaderSection";
+import SecondSection from "./pages/SecondSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <CanvasContainer/>
       </div>
       <HeaderSection/>
+      <SecondSection/>
     </main>
   )
 }

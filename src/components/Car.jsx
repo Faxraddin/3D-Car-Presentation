@@ -1,6 +1,11 @@
-
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei';
+import { useControls } from 'leva';
+import { useFrame,useThree } from '@react-three/fiber';
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Car(props) {
   const { nodes, materials } = useGLTF('/scene.gltf')

@@ -22,16 +22,25 @@ export default function Car(props) {
       x: -3.5,
           y: 1,
           z: 0,
+          scrollTrigger:{
+            immediateRender:true
+          }
         })
         .from(scene.position, {
        x: -0.5,
           y: -0.1,
           z: 0,
+          scrollTrigger:{
+            immediateRender:true
+          }
         })
         .from(scene.rotation, {
           x: 0,
           y: 3.2,
           z: 0,
+          scrollTrigger:{
+            immediateRender:true
+          }
         })
 
     .to(camera.position,{

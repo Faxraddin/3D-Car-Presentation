@@ -17,7 +17,24 @@ export default function Car(props) {
   useLayoutEffect(()=>{
     new ScrollTrigger({});
 
-    tl.to(camera.position,{
+    tl
+    .from(camera.position, {
+      x: -3.5,
+          y: 1,
+          z: 0,
+        })
+        .from(scene.position, {
+       x: -0.5,
+          y: -0.1,
+          z: 0,
+        })
+        .from(scene.rotation, {
+          x: 0,
+          y: 3.2,
+          z: 0,
+        })
+
+    .to(camera.position,{
       x:-3.5,
       y:1,
       z:0,

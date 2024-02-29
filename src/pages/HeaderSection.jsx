@@ -2,7 +2,7 @@ import React from "react"
 
 const HeaderSection = () => {
   return (
-    <div className="first-section w-full h-[720px] flex justify-center items-center mt-5">
+    <div className=" w-full h-[720px] flex justify-center items-center mt-5">
         <div className="w-full h-full flex flex-col justify-between items-center">
             <div className="text-center flex flex-col gap-0">
                 <h3 className="text-4xl fontG">Faxraddin Yuzbashew</h3>

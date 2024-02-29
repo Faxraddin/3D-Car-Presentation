@@ -31,10 +31,6 @@ text-orientation: upright;
    scroll-snap-type: y mandatory;
 }
 
-.first-section{
-    scroll-snap-align: center;
-}
-
-.second-section{
+.first-section,.secpnd-section{
     scroll-snap-align: center;
 }

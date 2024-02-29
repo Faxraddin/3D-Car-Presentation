@@ -18,21 +18,6 @@ export default function Car(props) {
 
   },[])
 
-  const {cameraPosition,scenePosition,sceneRotation} = useControls({
-    cameraPosition:{
-      value:{x:0,y:0,z:0},
-      step:0.5
-    },
-    scenePosition:{
-      value:{x:0,y:0,z:0},
-      step:0.5
-    },
-    sceneRotation:{
-      value:{x:0,y:0,z:0},
-      step:0.5
-    }
-  })
-
   return (
     <group ref={ref} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1.053}>

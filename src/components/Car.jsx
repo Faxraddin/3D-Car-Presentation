@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef,useLayoutEffect } from 'react'
 import { useGLTF } from '@react-three/drei';
 import { useControls } from 'leva';
 import { useFrame,useThree } from '@react-three/fiber';
@@ -8,9 +8,20 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Car(props) {
-  const { nodes, materials } = useGLTF('/scene.gltf')
+  const { nodes, materials } = useGLTF('/scene.gltf');
+
+  const ref = useRef(null);
+  const tl = gsap.timeline();
+  const {scene,camera} = useThree();
+
+  useLayoutEffect(()=>{
+
+  },[])
+
+  
+
   return (
-    <group {...props} dispose={null}>
+    <group ref={ref} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1.053}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.CASPITAspoiler} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.JiottoCHRM_tex1} />

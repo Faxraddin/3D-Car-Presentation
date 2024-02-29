@@ -14,3 +14,13 @@ body{
     font-weight: 600;
     font-style: normal;
 }
+
+.verticalText{
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+.verticalText2{
+    writing-mode: vertical-rl;
+text-orientation: upright;
+}

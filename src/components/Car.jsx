@@ -15,6 +15,84 @@ export default function Car(props) {
   const {scene,camera} = useThree();
 
   useLayoutEffect(()=>{
+    new ScrollTrigger({});
+
+    tl
+    .to(camera.position,{
+      x:-3.5,
+      y:1,
+      z:0,
+      scrollTrigger: {
+				trigger: ".first-section",
+				start: "top bottom",
+				end: "top top",
+				scrub: true,
+				immediateRender: false,
+			},
+    })
+    .to(scene.position, {
+      x: -0.5,
+      y: -0.1,
+      z: 0,
+      scrollTrigger: {
+        trigger: ".first-section",
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+        immediateRender: false,
+      },
+    })
+
+    .to(scene.rotation, {
+      x: 0,
+      y: 3.2,
+      z: 0,
+      scrollTrigger: {
+        trigger: ".first-section",
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+        immediateRender: false,
+      },
+    })
+
+    .to(camera.position,{
+      x:-3.5,
+      y:1,
+      z:0,
+      scrollTrigger: {
+				trigger: ".second-section",
+				start: "top bottom",
+				end: "top top",
+				scrub: true,
+				immediateRender: false,
+			},
+    })
+    .to(scene.position, {
+      x: 0.5,
+      y: -0.1,
+      z: 0.3,
+      scrollTrigger: {
+        trigger: ".second-section",
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+        immediateRender: false,
+      },
+    })
+
+    .to(scene.rotation, {
+      x: 0,
+      y: 3.2,
+      z: -1.3,
+      scrollTrigger: {
+        trigger: ".second-section",
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+        immediateRender: false,
+      },
+    })
 
   },[])
 

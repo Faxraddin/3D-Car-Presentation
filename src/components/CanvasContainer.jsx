@@ -8,11 +8,7 @@ import Car from "./Car";
 const CanvasContainer = () => {
   return (
     <Canvas shadows 
-        camera={{
-            position: [
-                2.942922067308307, 1, 2.5,
-            ],
-        }}
+     
     >
         
         <OrbitControls 

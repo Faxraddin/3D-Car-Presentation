@@ -2,7 +2,7 @@ import React from "react"
 
 const SecondSection = () => {
   return (
-    <div className="fontG w-full h-[820px] flex justify-center items-center mt-5">
+    <div className="second-section fontG w-full h-[820px] flex justify-center items-center mt-5">
         <div className="w-[96%] h-full flex justify-between items-center">
             <div className="text-[70px] verticalText">
                 <h1>Prue.</h1>

@@ -8,7 +8,6 @@ import Car from "./Car";
 const CanvasContainer = () => {
   return (
     <Canvas shadows 
-     
     >
         
         <OrbitControls 

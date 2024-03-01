@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    height: 100%;
 }
 
 .fontG {
@@ -28,9 +29,10 @@ body {
 .Appp {
     scroll-snap-type: y mandatory;
     overflow: scroll;
+  height: 1440px;
 }
 
 .first-section, .second-section {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     
 }

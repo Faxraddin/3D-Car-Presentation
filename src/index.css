@@ -2,35 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
 
-.fontG{
+.fontG {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
 
-.verticalText{
+.verticalText {
     transform: rotate(-90deg);
     text-align: center;
 }
 
-.verticalText2{
+.verticalText2 {
     writing-mode: vertical-rl;
-text-orientation: upright;
+    text-orientation: upright;
 }
 
-.Appp{
-    overflow-y: scroll; /* Enable vertical scrolling */
-   height: 1520px;
-   scroll-snap-type: y mandatory;
+.Appp {
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
 }
 
-.first-section,.secpnd-section{
-    scroll-snap-align: center;
+.first-section, .second-section {
+    scroll-snap-align: start;
+    
 }

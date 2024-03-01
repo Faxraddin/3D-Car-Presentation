@@ -6,14 +6,14 @@ import SecondSection from "./pages/SecondSection";
 
 function App() {
   return (
-    <main className="overflox-x-hidden">
+    <main className="Appp overflox-x-hidden">
       <div className="h-screen w-full fixed top-10 z-10 hidden lg:block">
         <CanvasContainer/>
       </div>
-      <div className="Appp">
+     
         <HeaderSection/>
         <SecondSection/>
-      </div>
+      
 
     </main>
   )
